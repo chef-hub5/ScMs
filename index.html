@@ -679,6 +679,57 @@
       .app>.content{margin:0}
     }
     [hidden]{display:none!important}
+    .app:not(.parent-employee-portal) #dashboard.active .page-head{position:relative;align-items:center;min-height:164px;margin-bottom:20px;padding:25px 28px;overflow:hidden;border:0;border-radius:22px;background:radial-gradient(ellipse at 86% 20%,#ffffff24,transparent 34%),linear-gradient(112deg,#124d49 0%,#14816f 58%,#35a879 100%);box-shadow:0 14px 34px #0e65512b}
+    .app:not(.parent-employee-portal) #dashboard.active .page-head .eyebrow{color:#b8f3d9}
+    .app:not(.parent-employee-portal) #dashboard.active .page-head h1{margin-top:8px;color:#fff;font-size:clamp(25px,3vw,34px);letter-spacing:-.04em}
+    .app:not(.parent-employee-portal) #dashboard.active .page-head p{max-width:580px;color:#dcf7ed}
+    .app:not(.parent-employee-portal) #dashboard.active .page-head .actions{position:relative;z-index:1}
+    .app:not(.parent-employee-portal) #dashboard.active .page-head .actions .secondary{border-color:#ffffff75;background:#ffffffed;color:#18554c}
+    .app:not(.parent-employee-portal) #dashboard.active .page-head .actions .primary{background:#f3c969;color:#183c38;box-shadow:none}
+    .app:not(.parent-employee-portal) #dashboard.active .stats .stat{min-height:136px;padding:19px;border-top:3px solid var(--dashboard-stat-color);box-shadow:0 9px 24px #1a30450b;transition:transform .18s ease,box-shadow .18s ease}
+    .app:not(.parent-employee-portal) #dashboard.active .stats .stat:hover{transform:translateY(-3px);box-shadow:0 14px 28px #1a304514}
+    .app:not(.parent-employee-portal) #dashboard.active .stats .stat:nth-child(1){--dashboard-stat-color:#3a83c5}
+    .app:not(.parent-employee-portal) #dashboard.active .stats .stat:nth-child(2){--dashboard-stat-color:#9c70d1}
+    .app:not(.parent-employee-portal) #dashboard.active .stats .stat:nth-child(3){--dashboard-stat-color:#e4a449}
+    .app:not(.parent-employee-portal) #dashboard.active .stats .stat:nth-child(4){--dashboard-stat-color:#22a783}
+    .app:not(.parent-employee-portal) #dashboard.active .stats .stat:nth-child(1) .stat-icon{background:#e8f1fb;color:#3a83c5}
+    .app:not(.parent-employee-portal) #dashboard.active .stats .stat:nth-child(2) .stat-icon{background:#f1eafb;color:#9c70d1}
+    .app:not(.parent-employee-portal) #dashboard.active .stats .stat:nth-child(3) .stat-icon{background:#fff4e2;color:#c18427}
+    .app:not(.parent-employee-portal) #dashboard.active .stats .stat:nth-child(4) .stat-icon{background:#e7f6f0;color:#22a783}
+    .dashboard-quick-actions{margin:0 0 20px}
+    .dashboard-quick-actions.admin-only:not(.view){display:grid}
+    .dashboard-quick-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0 2px 12px}
+    .dashboard-quick-head strong{font-size:15px}
+    .dashboard-quick-head span{color:var(--muted);font-size:11px}
+    .dashboard-action-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px}
+    .dashboard-action{display:flex;align-items:center;gap:12px;min-width:0;padding:13px;border:1px solid var(--line);border-radius:15px;background:var(--surface);color:var(--ink);text-align:left;box-shadow:0 5px 16px #20304d08;transition:transform .16s ease,border-color .16s ease,box-shadow .16s ease}
+    .dashboard-action:hover{transform:translateY(-2px);border-color:#a9d8ca;box-shadow:0 10px 24px #20304d12}
+    .dashboard-action-icon{display:grid;flex:0 0 38px;width:38px;height:38px;place-items:center;border-radius:12px;background:#e8f6f0;color:#16816d;font-size:19px;font-weight:800}
+    .dashboard-action:nth-child(2) .dashboard-action-icon{background:#f0eafa;color:#8a60bd}
+    .dashboard-action:nth-child(3) .dashboard-action-icon{background:#e8f0fb;color:#477db7}
+    .dashboard-action:nth-child(4) .dashboard-action-icon{background:#fff3dd;color:#c18427}
+    .dashboard-action:nth-child(5) .dashboard-action-icon{background:#e7f6f5;color:#258e89}
+    .dashboard-action:nth-child(6) .dashboard-action-icon{background:#fcebef;color:#c55e78}
+    .dashboard-action-copy{display:grid;gap:4px;min-width:0}
+    .dashboard-action-copy strong{font-size:12px}
+    .dashboard-action-copy small{color:var(--muted);font-size:10px}
+    .dashboard-action-arrow{margin-left:auto;color:#8490a2;font-size:18px}
+    .app:not(.parent-employee-portal) #dashboard.active .dashboard-grid .section-card{border-color:#e4ebe8;box-shadow:0 9px 24px #1a30450a}
+    .app-back-button:disabled{opacity:.42;cursor:not-allowed}
+    .student-name-cell{display:flex;align-items:center;gap:10px;min-width:150px}
+    .student-name-cell strong{display:block}
+    .student-list-photo{display:grid;flex:0 0 38px;width:38px;height:38px;place-items:center;overflow:hidden;border:1px solid #dfe6f0;border-radius:50%;background:#e8edff;color:var(--brand);font-size:11px;font-weight:800}
+    .student-list-photo img{display:block;width:100%;height:100%;object-fit:cover}
+    .student-list-photo-fallback{background:#edf1fb}
+    @media(max-width:600px){
+      .dashboard-action-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+      .dashboard-action{gap:8px;padding:10px}
+      .dashboard-action-icon{flex-basis:32px;width:32px;height:32px}
+      .app:not(.parent-employee-portal) #dashboard.active .page-head{padding:21px 19px;border-radius:18px}
+      .app:not(.parent-employee-portal) #dashboard.active .page-head .actions{justify-content:flex-start}
+    }
+    @media(max-width:380px){.dashboard-action-grid{grid-template-columns:1fr}.dashboard-quick-head{align-items:flex-start;flex-direction:column;gap:4px}}
+    @media(prefers-reduced-motion:reduce){.app:not(.parent-employee-portal) #dashboard.active .stats .stat,.dashboard-action{transition:none}}
   </style>
 </head>
 <body>
@@ -863,6 +914,7 @@
       <div class="logo portal-animated-logo" role="img" aria-label="Clasten"><img class="logo-image" data-scholaro-logo alt="" aria-hidden="true"><span class="logo-word" aria-hidden="true">lasten</span></div>
       <div class="school-switcher"><span class="school-header-mark" id="schoolHeaderMark" aria-hidden="true" hidden><img id="schoolHeaderLogo" alt="" hidden><span class="school-header-initials" id="schoolHeaderInitials" hidden></span></span><div class="school-header-copy"><strong id="schoolName">Your School</strong><span class="school-switcher-label">Workspace</span></div></div>
       <div class="top-actions">
+        <button class="icon-btn app-back-button" id="appBackButton" type="button" aria-label="No previous page" title="No previous page" disabled>&#8592;</button>
         <select class="select-control" id="campusSwitcher" aria-label="Select campus" hidden></select>
         <div class="header-clock" id="headerClock" data-template="digital" role="group" aria-label="Local time">
           <div class="header-clock-face"><time class="header-clock-time" id="headerClockTime" aria-label="Current local time" aria-live="off">--:--:--</time><span class="header-clock-date" id="headerClockDate"></span></div>
@@ -3859,6 +3911,72 @@ ZW|Zimbabwe|263`.split("\n").map(line=>{const[code,name,dial]=line.split("|");re
     loadSchoolRecords=async function(user,initialResult=null,requestedView=null){await loadSchoolRecordsEmployeeLeaveBase(user,initialResult,requestedView);renderEmployeeLeaveRequests()};
     const renderEmployeeDashboardLeaveBase=renderEmployeeDashboard;
     renderEmployeeDashboard=function(){renderEmployeeDashboardLeaveBase();if(currentUser?.role==="employee"){const actions=$("#dashboard .page-head .actions");if(actions&&!actions.querySelector('[data-view-link="employeeLeave"]')){actions.insertAdjacentHTML("beforeend",'<button class="secondary" type="button" data-view-link="employeeLeave">Leave requests</button>');actions.lastElementChild.addEventListener("click",()=>showView("employeeLeave"))}}};
+    const dashboardQuickActions=document.createElement("section");
+    dashboardQuickActions.className="dashboard-quick-actions admin-only";
+    dashboardQuickActions.id="dashboardQuickActions";
+    dashboardQuickActions.setAttribute("aria-label","Quick actions");
+    dashboardQuickActions.innerHTML=`<div class="dashboard-quick-head"><strong>Quick actions</strong><span>Jump straight into today's work</span></div><div class="dashboard-action-grid"><button class="dashboard-action" type="button" data-dashboard-modal="student"><span class="dashboard-action-icon" aria-hidden="true">+</span><span class="dashboard-action-copy"><strong>Add student</strong><small>Create a learner profile</small></span><span class="dashboard-action-arrow" aria-hidden="true">›</span></button><button class="dashboard-action" type="button" data-dashboard-modal="employee"><span class="dashboard-action-icon" aria-hidden="true">+</span><span class="dashboard-action-copy"><strong>Invite employee</strong><small>Grow your school team</small></span><span class="dashboard-action-arrow" aria-hidden="true">›</span></button><button class="dashboard-action" type="button" data-dashboard-view="attendance"><span class="dashboard-action-icon" aria-hidden="true">&#10003;</span><span class="dashboard-action-copy"><strong>Attendance</strong><small>Open the daily register</small></span><span class="dashboard-action-arrow" aria-hidden="true">›</span></button><button class="dashboard-action" type="button" data-dashboard-view="fees"><span class="dashboard-action-icon" aria-hidden="true">&#8358;</span><span class="dashboard-action-copy"><strong>Fees &amp; invoices</strong><small>Review payments and balances</small></span><span class="dashboard-action-arrow" aria-hidden="true">›</span></button><button class="dashboard-action" type="button" data-dashboard-view="calendar"><span class="dashboard-action-icon" aria-hidden="true">&#9719;</span><span class="dashboard-action-copy"><strong>School calendar</strong><small>See upcoming events</small></span><span class="dashboard-action-arrow" aria-hidden="true">›</span></button><button class="dashboard-action" type="button" data-dashboard-view="reports"><span class="dashboard-action-icon" aria-hidden="true">&#8599;</span><span class="dashboard-action-copy"><strong>View reports</strong><small>Check school activity</small></span><span class="dashboard-action-arrow" aria-hidden="true">›</span></button></div>`;
+    $("#dashboard .stats").insertAdjacentElement("afterend",dashboardQuickActions);
+    dashboardQuickActions.addEventListener("click",event=>{const action=event.target.closest("[data-dashboard-modal], [data-dashboard-view]");if(!action||!dashboardQuickActions.contains(action))return;if(action.dataset.dashboardModal)openModal(action.dataset.dashboardModal);else showView(action.dataset.dashboardView)});
+    function renderStudentPhotoThumbnails(){
+      const students=data.student||[],rows=$("#studentRows").rows;
+      students.forEach((student,index)=>{
+        const cell=rows[index]?.cells[0],name=cell?.querySelector("strong");
+        if(!cell||!name)return;
+        const initials=String(name.textContent||"").trim().split(/\s+/).filter(Boolean).slice(0,2).map(part=>part.charAt(0)).join("").toUpperCase()||"S";
+        const avatar=document.createElement("span"),photo=safeCardPhoto(student.profilePicture||student.passport);
+        avatar.className="student-list-photo";
+        avatar.setAttribute("aria-hidden","true");
+        if(photo){
+          const image=document.createElement("img");
+          image.src=photo;image.alt="";image.loading="lazy";image.decoding="async";
+          image.onerror=()=>{avatar.replaceChildren();avatar.classList.add("student-list-photo-fallback");avatar.textContent=initials};
+          avatar.appendChild(image);
+        }else{
+          avatar.classList.add("student-list-photo-fallback");avatar.textContent=initials;
+        }
+        const nameGroup=document.createElement("div");
+        nameGroup.className="student-name-cell";
+        nameGroup.append(avatar,name);
+        cell.replaceChildren(nameGroup);
+      });
+    }
+    const renderDataStudentPhotosBase=renderData;
+    renderData=function(){renderDataStudentPhotosBase();renderStudentPhotoThumbnails()};
+    const appViewHistory=[];
+    let appBackIdentity="";
+    function activeAppViewId(){return document.querySelector(".view.active")?.id||""}
+    function refreshAppBackButton(){
+      const button=$("#appBackButton");
+      if(!button)return;
+      const current=activeAppViewId(),canGoBack=appViewHistory.length>0||Boolean(current&&current!=="dashboard");
+      button.disabled=!canGoBack;
+      button.title=canGoBack?"Go back to previous page":"No previous page";
+      button.setAttribute("aria-label",button.title);
+    }
+    const showViewBackBase=showView;
+    showView=function(id){
+      const previous=activeAppViewId();
+      showViewBackBase(id);
+      const current=activeAppViewId();
+      if(previous&&current&&previous!==current){appViewHistory.push(previous);if(appViewHistory.length>30)appViewHistory.shift()}
+      refreshAppBackButton();
+    };
+    $("#appBackButton").addEventListener("click",()=>{
+      const current=activeAppViewId(),previous=appViewHistory.length?appViewHistory[appViewHistory.length-1]:"dashboard";
+      if(!current||current===previous){refreshAppBackButton();return}
+      showViewBackBase(previous);
+      if(activeAppViewId()!==current)appViewHistory.pop();
+      else if(current!=="dashboard"){appViewHistory.length=0;showViewBackBase("dashboard")}
+      refreshAppBackButton();
+    });
+    const applyAccessAppBackBase=applyAccess;
+    applyAccess=function(syncMessages=true){
+      const identity=currentUser?`${currentUser.tenantId||currentUser.schoolCode||""}:${currentUser.email||""}`:"";
+      if(identity!==appBackIdentity){appViewHistory.length=0;appBackIdentity=identity}
+      applyAccessAppBackBase(syncMessages);
+      refreshAppBackButton();
+    };
     ensureConnectedPortalViews();
     const activeCapacityRow=[...document.querySelectorAll("#pricing .landing-comparison tbody tr")].find(row=>row.cells[0]?.textContent.trim()==="Active student capacity");
     if(activeCapacityRow){activeCapacityRow.cells[1].textContent="Up to 100";activeCapacityRow.cells[2].textContent="Up to 200"}
